@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@types/gsap": "^3.0.0"
+  }
+}
