@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Load javascript file -->
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    button {
+      padding: 20px;
+      font-size: 2rem;
+      border-radius: 20px;
+    }
+
+    .active {
+      background-color: green;
+    }
+
+    .todo {
+      padding: 20px;
+      font-size: 1.3rem;
+      background-color: #aaa;
+      color: white;
+      border-radius: 20px 30px;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .todos-list {
+      min-height: 400px; 
+    }
+
+  </style>
+</head>
+
+<!-- BROWSER PARSES THIS SHIT -->
+<!-- PARSES in den sogenannten DOM -->
+<body>
+
+  <div class="todos-list">
+  </div>
+
+  <button>Login</button>
+
+</body>
+
+</html>
