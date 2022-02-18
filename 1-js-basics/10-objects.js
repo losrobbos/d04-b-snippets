@@ -1,5 +1,5 @@
 
-console.log( this ) // 
+console.log( this ) // => printed ein empty object
 
 // Object => BOX für Variablen (Key Value Pairs)
 const bird = {
@@ -35,23 +35,23 @@ log( bird.name )
 
 // this is nicht immer genau gleich!
 // je nachdem WAS FÜR EINE FUNKTION ich aufrufe und WIE heißt this immer etwas anderes
-// bird.flapNormal() // this = bird
-// bird.flapFunc() // // this = bird
-// bird.flapArrow()  // => this = undefined
+bird.flapNormal() // this = bird
+bird.flapFunc() // this = bird
+bird.flapArrow()  // => this = undefined
 
 console.log( bird )
 
-// extending object dynamically at any time
+
+// EXTENDING object dynamically at any time
 
   // add new property
 bird.favoriteMove = "flap"
 
-  // add new function
-bird.funky = () => { console.log("Funky") }
+  // add new functions
+bird.funky = () => { console.log("Funky") } // WARNUNG: This funktioniert nicht in arrow func!
 bird.funkyName = function() { console.log("Funky " + this.name) } // THIS funktioniert!
 
 bird.funkyName()
-
 
 log()
 log()
