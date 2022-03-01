@@ -12,8 +12,8 @@ const books = [
 ]
 
 
-// MAP => loopt durch jedes Item im Array durch und MAPPED (wandelt) es in etwas ANDERES
-// MAP => loopt durch jedes Item im Array durch und EXTRACTED etwas aus jedem Item 
+// MAP - Use Case 1 => loopt durch jedes Item im Array durch und MAPPED (wandelt) es in etwas ANDERES
+// MAP - Use Case 2 => loopt durch jedes Item im Array durch und EXTRACTED etwas aus jedem Item 
 
 
 
