@@ -28,3 +28,60 @@ const admins = users.filter((user) => {
 });
 
 console.log({ admins });
+
+
+// Input
+const salesInMonth = [
+  { product: "Toaster T", price: 15 },
+  { product: "Waschmaschine", price: 145 },
+  { product: "Spülmaschine", price: 200 },
+]
+
+// eine Summe berechnen über den ganzen Array OHNE reduce
+// let sum = 0 
+// for(let sale of salesInMonth) {
+//   sum += sale.price
+// }
+// console.log( { sum })
+
+console.log()
+
+
+const sum = salesInMonth.reduce((presum, salesItem) => {
+  return presum + salesItem.price
+}, 0) // set 0 as start value for variable "sum"
+
+console.log( { sum } )
+
+
+const summe = [ 3,2,1 ].reduce((sum, item) => {
+  console.log(sum, item)
+  return sum + item
+}, 0)
+
+console.log( {summe} )
+
+
+
+// blog posts
+
+const posts = [
+  { title: "Reduce in action", author: "Rob" },
+  { title: "Reduce default values", author: "Mehmet" },
+  { title: "Higher Order Functions", author: "Mehmet" },
+]
+
+// EXPECTED => alle unique authors in meinem Blog
+// summe => [ "Rob", "Mehmet" ] => Initial value: []
+
+const uniqueAuthors = posts.reduce( (authors, post) => {
+  let author = post.author
+
+  if(!authors.includes( author )) {
+    authors.push( author )
+  }
+
+  return authors
+}, []) // [ 'Rob', 'Mehmet']
+
+console.log({ uniqueAuthors })
