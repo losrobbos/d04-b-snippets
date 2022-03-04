@@ -4,7 +4,8 @@
 
 const users = [
   { name: 'Zubia', email: 'zubia@zubia.com', admin: true },
-  { name: 'Marion', email: 'marion@marion.com', admin: false }
+  { name: 'Marion', email: 'marion@marion.com', admin: false },
+  { name: 'Mojdeh', email: 'mojdeh@mojdeh.com', admin: true }
 ];
 
 // BEISPIEL: emails senden
@@ -85,3 +86,21 @@ const uniqueAuthors = posts.reduce( (authors, post) => {
 }, []) // [ 'Rob', 'Mehmet']
 
 console.log({ uniqueAuthors })
+
+
+// von den usern => gib mir alle ADMINS => filter
+// gib mir von allen ADMINS => nur die Namen => map
+
+
+
+const adminEmails = users
+.filter(( user ) => {
+  return user.admin 
+})
+.map(( user ) => {
+  return user.email
+})
+// [ Zubia, Mojdeh ]
+
+
+console.log( { adminEmails } )
