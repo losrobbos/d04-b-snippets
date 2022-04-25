@@ -42,6 +42,18 @@ This package is maintained by the VueJS community
 
 A reusable "lego" piece in your website, e.g. a header, including its javascript logic
 
+### JSX
+
+JSX (JavaScript XML) is kind of mixture between HTML and JavaScript data.
+
+The use case for JSX to get reusable layouts, where you can fill in different data.
+
+You can write an "HTML layout" once, and reuse it throughout your application.
+
+JSX is comparable to a javascript function that RETURNS HTML at the end, but different HTML depending on the INPUT variables. Different input variables => <b>same LAYOUT & STYLE, but different CONTENT</b>. 
+
+This way you can e.g. create a list of todo cards, each having the same layout & style, but each having different Todo content on the card.
+
 ### Props
 
 Props are for components what parameters are for functions that you call. 
