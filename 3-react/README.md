@@ -85,7 +85,9 @@ return (
 
 // receiving the data
 const UserCard = ( { name, age } ) => {
-	...
+
+	return <div>{name} is {age} years old</div>
+
 }
 ```
 
