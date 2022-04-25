@@ -2,6 +2,30 @@
 
 In this folder please find React mini projects, demonstrating React concepts
 
+## Abbreviations & Terms
+
+### Bundler
+
+An applicaton that merges javascript & other assets like CSS files together and optimizes them (e.g. reduce filesize so the assets load as quickly as possible in the browser)
+
+### Build process
+
+The process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
+
+### CRA => Create-React-App
+
+An NPM package which will create a react project using the "bundler" WebPack
+
+This package was developed and is maintained by Facebook / Meta.
+
+### Vite
+
+An alternative build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster that the WebPack bundler
+
+This package is maintained by the VueJS community
+
+
+
 ## Fundamental REACT Concepts
 
 ### Component
@@ -74,24 +98,3 @@ So learn it once, and you will have a solid foundation for modern web programmin
 
 
 
-## Abbreviations & Terms
-
-### Bundler
-
-An applicaton that merges javascript & other assets like CSS files together and optimizes them (e.g. reduce filesize so the assets load as quickly as possible in the browser)
-
-### Build process
-
-The process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
-
-### CRA => Create-React-App
-
-An NPM package which will create a react project using the "bundler" WebPack
-
-This package was developed and is maintained by Facebook / Meta.
-
-### Vite
-
-An alternative build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster that the WebPack bundler
-
-This package is maintained by the VueJS community
