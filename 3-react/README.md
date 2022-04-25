@@ -136,5 +136,10 @@ The concept of state is a very universal and CENTRAL concept in Frontend Framewo
 So learn it once, and you will have a solid foundation for modern web programming!
 
 
+## Resources
+
+I have created a commented list of resources if you are looking for some hints where you could got next ;)
+
+https://github.com/losrobbos/coding-advanced-resources
 
 
