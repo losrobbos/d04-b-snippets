@@ -56,9 +56,11 @@ This way you can e.g. create a list of todo cards, each having the same layout &
 
 ### Props
 
-Props are for components what parameters are for functions that you call. 
+Props are for components what parameters are for functions. 
 
-You use props to give some INPUT to your component, usually used to pass in data that should get rendering into some existing HTML layout.
+You use props to give some INPUT to your component. 
+
+Usually props are used to pass in DATA that should get rendered into an existing HTML layout.
 
 E.g. you have a reusable "UserCard" component that should render the SAME layout, but each time with different DATA.
 
