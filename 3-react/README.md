@@ -2,7 +2,13 @@
 
 In this folder please find React mini projects, demonstrating React concepts
 
-## Abbreviations & Terms
+## Abbreviations & Terms for Web Projects
+
+### Asset
+
+A file in our project, e.g. JavaScript, CSS or Image, that potentially can get optimized before shipping.
+
+E.g. CSS "assets" can be optimized for shipping, by merging them all together into ONE CSS file and "minify" them (=> compacting the resulting CSS file, e.g. by removing all whitespaces / newlines)
 
 ### Bundler
 
