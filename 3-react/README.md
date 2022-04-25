@@ -98,9 +98,9 @@ State is data that will change based on USER ACTION.
 
 E.g. the user creates a new item in the UI (whatever item that is).
 
-In React we will NOT update the DOM directly.
+In React we will NOT update the DOM directly with JavaScript. It will do that work for us.
 
-Instead we will change a so called STATE variable instead, using a SETTER function. 
+Instead we will change a so called STATE variable, using a SETTER function. 
 
 By calling this SETTER function, React will automatically (!) - in the background so to say - update the DOM for us! So it will do all the magic of "document.querySelector" and DOM update logic for us. 
 
