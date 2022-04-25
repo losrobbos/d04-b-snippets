@@ -24,13 +24,13 @@ A famous bundler application for web projects. De facto standard of the past (ge
 
 ### CRA => Create-React-App
 
-An NPM package which will create a react project using the bundler "WebPack"
+An NPM package which will create a react project using the bundler "Webpack". It will already setup a boilerplate for your project and a pre-configured "build process". So ideally - for basic projects - you just need to start the build process and can deploy the result "build" folder anywhere.
 
-This package was developed and is maintained by Facebook / Meta.
+The package Create-React-App was created and is maintained by Facebook / Meta.
 
 ### Vite
 
-An alternative build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster that the WebPack bundler
+An alternative build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster compared to the WebPack bundler.
 
 This package is maintained by the VueJS community
 
