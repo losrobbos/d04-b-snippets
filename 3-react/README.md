@@ -54,6 +54,7 @@ JSX is comparable to a javascript function that RETURNS HTML at the end, but dif
 
 This way you can e.g. create a list of todo cards, each having the same layout & style, but each having different content in the card.
 
+
 ### Props
 
 Props are for components what parameters are for functions. 
@@ -91,12 +92,25 @@ const UserCard = ( { name, age } ) => {
 }
 ```
 
-### STATE
+
+### Rendering
+
+The process where React updates the DOM. 
+
+Typically this is triggered by some USER ACTION, e.g. the user filtering a list or adding a new item.
+
+The RENDERING is done by React automatically, whenever there IS something to NEW / UPDATED to render.
+
+And the thing that TRIGGERS this rendering process is the so called STATE...
+
+
+### State
 
 STATE is any data that could get UPDATED in the UI.
+
 State is data that will change based on USER ACTION.
 
-E.g. the user creates a new item in the UI (whatever item that is).
+E.g. the user creates a new item in the UI (whatever item that is) by clicking some button.
 
 In React we will NOT update the DOM directly with JavaScript. It will do that work for us.
 
