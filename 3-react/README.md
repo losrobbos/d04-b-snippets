@@ -12,9 +12,13 @@ An applicaton that merges javascript & other assets like CSS files together and 
 
 The process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
 
+### WebPack
+
+A famous bundler application for web projects. De facto standard of the past (gets more and more competition)
+
 ### CRA => Create-React-App
 
-An NPM package which will create a react project using the "bundler" WebPack
+An NPM package which will create a react project using the bundler "WebPack"
 
 This package was developed and is maintained by Facebook / Meta.
 
