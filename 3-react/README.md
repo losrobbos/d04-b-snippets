@@ -76,11 +76,22 @@ So learn it once, and you will have a solid foundation for modern web programmin
 
 ## Abbreviations & Terms
 
-Bundler => an applicaton that merges javascript & other assets like CSS files together and optimizes them (e.g. reduce filesize so the assets load as quickly as possible in the browser)
+### Bundler
 
-Build process => the process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
+An applicaton that merges javascript & other assets like CSS files together and optimizes them (e.g. reduce filesize so the assets load as quickly as possible in the browser)
 
-CRA => Create-React-App => an executable NPM package which will create a react project using the "bundler" WebPack
+### Build process
 
-Vite => another build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster that the WebPack bundler
+The process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
 
+### CRA => Create-React-App
+
+An NPM package which will create a react project using the "bundler" WebPack
+
+This package was developed and is maintained by Facebook / Meta.
+
+### Vite
+
+An alternative build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster that the WebPack bundler
+
+This package is maintained by the VueJS community
