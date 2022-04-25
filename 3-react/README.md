@@ -24,16 +24,22 @@ Example:
 
 // Passing user data as PROP
 
+```
 const user = { name: "Rob", age: 38 }
 
-<UserCard user={ user } />
+return (
+	<UserCard user={ user } />
+)
+```
 
-// UserCard
+```
+// UserCard component
 
 // receiving the data
 const UserCard = ( { name, age } ) => {
 	...
 }
+```
 
 ### STATE
 
