@@ -111,7 +111,7 @@ We can use this setter function to UPDATE the user object.
 
 `setUser({...user, age: 39}) // set a new age on the user object`
 
-One the SETTER function updated the object, React will now trigger the UPDATE of the DOM auto-magically.
+Once the SETTER function updated the object, React will now trigger the UPDATE of the DOM auto-magically behind the scenes.
 
 It will also do it very efficient. Meaning: It will just update the DOM in that parts that actually have changed, and will leave everything else untouched!
 
