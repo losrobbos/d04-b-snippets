@@ -76,7 +76,7 @@ So learn it once, and you will have a solid foundation for modern web programmin
 
 ## Abbreviations & Terms
 
-Bundler => an applicaton that "merged" javascript & other assets like CSS files together and optimizes them (e.g. reduce filesize so the assets load as quickly as possible in the browser)
+Bundler => an applicaton that merges javascript & other assets like CSS files together and optimizes them (e.g. reduce filesize so the assets load as quickly as possible in the browser)
 
 Build process => the process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
 
