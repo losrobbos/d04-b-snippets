@@ -58,7 +58,9 @@ The use case for JSX is to get reusable layouts, where you can fill in different
 
 You can write an "HTML layout" once, and reuse it throughout your application.
 
-JSX is comparable to a javascript function that RETURNS HTML at the end, but different HTML depending on the INPUT variables. Different input variables => <b>same LAYOUT & STYLE, but different CONTENT</b>. 
+JSX is comparable to a javascript function that RETURNS HTML at the end, but different HTML depending on the INPUT variables. 
+
+Different input variables => <b>same LAYOUT & STYLE, but different CONTENT</b>. 
 
 This way you can e.g. create a list of todo cards, each having the same layout & style, but each having different content in the card.
 
