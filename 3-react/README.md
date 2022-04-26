@@ -95,6 +95,7 @@ return (
 // receiving the data
 const UserCard = ( { name, age } ) => {
 
+	// JSX => LAYOUT of our component ! But with changeable content! 
 	return <div>{name} is {age} years old</div>
 
 }
