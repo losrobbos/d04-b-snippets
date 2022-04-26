@@ -34,7 +34,11 @@ The package Create-React-App was created and is maintained by Facebook / Meta.
 
 ### Vite
 
-An alternative build tool which uses "esbuild" under the hood for bundling instead of webpack. Esbuild is significantly faster compared to the WebPack bundler.
+An alternative to the CRA build tool which uses "esbuild" under the hood for bundling instead of webpack. 
+
+Esbuild is significantly faster compared to the WebPack bundler.
+
+Also you can setup not just React projects with it, also vanilla JS web projects or VueJS projects.
 
 This package is maintained by the VueJS community
 
