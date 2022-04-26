@@ -18,13 +18,17 @@ An applicaton that merges javascript & other assets like CSS files together and 
 
 The process that triggers the bundling & optimization. The result is usually a folder called "build" or "dist" (= distribution => optimized for distributing / deployment)
 
+The resulting "build" folder can be deployed to any free or paid hoster easily, e.g. GitHub pages, Netlify, Vercel or Heroku
+
 ### WebPack
 
 A famous bundler application for web projects. De facto standard of the past (gets more and more competition)
 
 ### CRA => Create-React-App
 
-An NPM package which will create a react project using the bundler "Webpack". It will already setup a boilerplate for your project and a pre-configured "build process". So ideally - for basic projects - you just need to start the build process and can deploy the result "build" folder anywhere.
+An NPM package which will create a react project using the bundler "Webpack". It will already setup a boilerplate for your project and a pre-configured "build process". 
+
+So ideally - for basic projects - you just need to start the build process and can deploy the resulting "build" folder to any host provider, e.g. Vercel.
 
 The package Create-React-App was created and is maintained by Facebook / Meta.
 
