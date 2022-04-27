@@ -18,22 +18,25 @@ function App() {
   const name = "Rob"
   const login = false
 
+  // NORMAL array => if changed does NOT update the DOM automatically
   // const arrPeople = ["Zubia", "Marion", "Jakob", "Mehmet"]
 
+  // STATE array => if changed using SETTER (= setArrPeople) it WILL update the DOM automatically
   const [arrPeople, setArrPeople] = useState(["Zubia", "Marion", "Jakob", "Mehmet"])
 
 
+  // demonstrate a change of an STATE array
   const addPerson = () => {
     console.log( "AddPerson called...")
-    // arrPeople.push("Sevde")
-    const peopleUpdated = [...arrPeople, "Sevde"]
+    // arrPeople.push("Sevde") // changing the original will not work!
+    const peopleUpdated = [...arrPeople, "Sevde"] // create a COPY of the original first!
 
     // STATE CHANGE FUNCTIONS trigger a RE-RENDERING (= DOM UPDATE) 
-    setArrPeople( peopleUpdated )
+    setArrPeople( peopleUpdated ) 
   }
 
   // LEGO mit HTML
-  // JSX => render HTML
+  // JSX => render HTML + JavaScript data
   return <div className="App">
     {/* Use Component just like your OWN HTML tag */}
     {/* pass PROPS to component using kind of like "HTML attributes" */}
