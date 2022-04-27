@@ -48,7 +48,7 @@ This package is maintained by the VueJS community
 
 ### Component
 
-A reusable "lego" piece in your website, e.g. a header, including its javascript logic
+A reusable "lego" piece in your website, e.g. a header, including its layout, style and javascript logic
 
 ### JSX
 
