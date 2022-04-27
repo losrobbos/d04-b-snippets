@@ -106,7 +106,7 @@ const UserCard = ( { name, age } ) => {
 
 ### Rendering
 
-The process where React updates the DOM. 
+The process where React updates the DOM (the visible stuff in the browser)
 
 Typically this is triggered by some USER ACTION, e.g. the user filtering a list or adding a new item.
 
