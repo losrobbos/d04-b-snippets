@@ -20,9 +20,17 @@ The process that triggers the bundling & optimization. The result is usually a f
 
 The resulting "build" folder can be deployed to any free or paid hoster easily, e.g. GitHub pages, Netlify, Vercel or Heroku
 
-### WebPack
+### Webpack
 
 A famous bundler application for web projects. De facto standard of the past (gets more and more competition)
+
+### Dev Server
+
+A program that will launch your web project in the browser. Typically listens your code changes and updates the code in the browser automatically, without a need to refresh.
+
+Typical examples: 
+- Live-Server
+- the Webpack dev server
 
 ### CRA => Create-React-App
 
