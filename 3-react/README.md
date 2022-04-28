@@ -110,11 +110,11 @@ And you pass in the actual DATA that should get displayed, using PROPS
 
 Example: 
 
-// Passing user data as PROP
 
 ```
 const user = { name: "Rob", age: 38 }
 
+// Passing user data as PROP
 return (
 	<UserCard user={ user } />
 )
