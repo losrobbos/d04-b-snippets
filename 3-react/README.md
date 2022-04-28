@@ -26,7 +26,7 @@ A famous bundler application for web projects. De facto standard of the past (ge
 
 ### Dev Server
 
-A program that will launch your web project in the browser. Typically listens your code changes and updates the code in the browser automatically, without a need to refresh.
+A program that will launch your web project in the browser. Typically listens for your code changes and updates the code in the browser automatically, without a need to refresh.
 
 Typical examples: 
 - Live-Server
