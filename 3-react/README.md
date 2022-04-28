@@ -32,6 +32,10 @@ Typical examples:
 - Live-Server
 - the Webpack dev server
 
+You use the dev server ONLY (!) during local development. The Dev Server starts your app, but does not optimize it for release.
+
+Once you are satisfied and reached a state that is worth RELEASING, you will BUILD the web project (=optimize the assets) and deploy the optimized BUILD.
+
 ### CRA => Create-React-App
 
 An NPM package which will create a react project using the bundler "Webpack". It will already setup a boilerplate for your project and a pre-configured "build process". 
