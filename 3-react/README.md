@@ -32,15 +32,34 @@ So ideally - for basic projects - you just need to start the build process and c
 
 The package Create-React-App was created and is maintained by Facebook / Meta.
 
+#### Problems
+
+Creat-React-App creates a pretty bloated react project with several hundred NPM packages it depends on. 
+
+So the setup & install process for even a super basic web project is quite huge. And due you have all this hundreds of dependencies, you can easily get into issues, once one of these dependencies is updated and contains a bug.
+
+Also starting up a CRA project takes a considerable amount of time, due it starts the webpack dev server, which is quite slow.
+
+
 ### Vite
 
 An alternative to the CRA build tool which uses "esbuild" under the hood for bundling instead of webpack. 
 
 Esbuild is significantly faster compared to the WebPack bundler.
 
+Also Vite installs just the bare, necessary packages to get React up and running.
+
 Also you can setup not just React projects with it, also vanilla JS web projects or VueJS projects.
 
 This package is maintained by the VueJS community
+
+#### Problems
+
+Vite gets you up and running quickly and the initial experience is great.
+
+However: A lot of react specific NPM packages rely on the full blown setup of CRA.
+
+So in short: Quite some packages will not work with your Vite setup right away and you need to install the necessary packages manually.
 
 
 
