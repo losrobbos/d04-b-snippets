@@ -36,9 +36,11 @@ The package Create-React-App was created and is maintained by Facebook / Meta.
 
 Creat-React-App creates a pretty bloated react project with several hundred NPM packages it depends on. 
 
-So the setup & install process for even a super basic web project is quite huge. And due you have all this hundreds of dependencies, you can easily get into issues, once one of these dependencies is updated and contains a bug.
+So the setup & install process for even a super basic web project is quite huge. 
 
-Also starting up a CRA project takes a considerable amount of time, due it starts the webpack dev server, which is quite slow.
+So even starting up a CRA project takes a considerable amount of time, due it starts the webpack dev server, which is quite slow.
+
+And due you have all this hundreds of dependencies, you can easily get into issues once any of these dependencies gets updated but contains a bug which could break the whole react app from even starting up.
 
 
 ### Vite
