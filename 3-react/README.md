@@ -48,7 +48,7 @@ So the setup & install process for even a super basic web project is quite huge.
 
 Also starting up a CRA project takes a considerable amount of time, due it starts the webpack dev server, which is quite slow.
 
-And due you have all this hundreds of dependencies, you can easily get into issues once any of these dependencies gets updated but contains a bug which could break the whole react app from even starting up.
+And due you have all this hundreds of dependencies, you can easily get into issues once any of these dependencies gets updated. Maybe this single package contains a bug or has again NEW dependencies with other packages, which could break the whole react app from even starting up.
 
 
 ### Vite
@@ -57,7 +57,7 @@ An alternative to the CRA build tool which uses "esbuild" under the hood for bun
 
 Esbuild is significantly faster compared to the WebPack bundler.
 
-Also Vite installs just the bare, necessary packages to get React up and running.
+Vite installs just the bare, necessary packages to get React up and running.
 
 Also you can setup not just React projects with it, also vanilla JS web projects or VueJS projects.
 
@@ -69,7 +69,7 @@ Vite gets you up and running quickly and the initial experience is great.
 
 However: A lot of react specific NPM packages rely on the full blown setup of CRA.
 
-So in short: Quite some packages will not work with your Vite setup right away and you need to install the necessary packages manually.
+So in short: Quite some packages will not work with your Vite setup right away and you sometimes need to install the necessary packages that it depends on manually.
 
 
 
