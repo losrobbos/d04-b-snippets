@@ -38,7 +38,7 @@ Creat-React-App creates a pretty bloated react project with several hundred NPM 
 
 So the setup & install process for even a super basic web project is quite huge. 
 
-So even starting up a CRA project takes a considerable amount of time, due it starts the webpack dev server, which is quite slow.
+Also starting up a CRA project takes a considerable amount of time, due it starts the webpack dev server, which is quite slow.
 
 And due you have all this hundreds of dependencies, you can easily get into issues once any of these dependencies gets updated but contains a bug which could break the whole react app from even starting up.
 
