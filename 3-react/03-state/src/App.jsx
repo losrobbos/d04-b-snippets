@@ -101,7 +101,7 @@ function App() {
     setTodos( todosKeep ) // overwrite old array and trigger DOM update
   }
 
-  // JSX calculated pieces
+  // JSX "pieces" => those could be outsourced to own components !
   const jsxTodoList = todos.map((todo) => (
     <div key={todo.id}>
       <span>{todo.title}</span>
@@ -112,6 +112,7 @@ function App() {
   ))
 
   // LAYOUT
+  // Layout should ideally not contain much javascript logic
   return (
     <div className="App">
       <header className="App-header">
