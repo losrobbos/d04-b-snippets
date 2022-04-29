@@ -64,12 +64,12 @@ function App() {
     console.log(idNew)
 
     // the WRONG way: adding a new item to array
-    // todos.push( todoNew ) // push does not work => we cannot alter the original!
+    // todos.push( todoNew ) // push does not work => we cannot change the original!
 
     // correct way: create COPY + add new one
     const todosCopy = [...todos, todoNew] // copy OLD array items + merge with NEW item
 
-    setTodos(todosCopy)
+    setTodos(todosCopy) // overwrite old array and trigger DOM update
   }
 
   const onClickArrayEdit = (idToEdit) => {
@@ -79,13 +79,13 @@ function App() {
     // FIND the item to update by ID
     // Update the found OBJECT => immutable => modify a COPY
 
-    const todosUpdated = todos.map( todo => {
-      return todo.id === idToEdit ? 
-        {...todo, title: titleNew } : // item we wanna update! => create a COPY of it!! 
-        todo // all others items => simply dont touch!
+    const todosUpdated = todos.map((todo) => {
+      return todo.id === idToEdit
+        ? { ...todo, title: titleNew } // item we wanna update! => create a COPY of it!!
+        : todo // all others items => simply dont touch!
     })
 
-    setTodos( todosUpdated )
+    setTodos(todosUpdated) // overwrite old array and trigger DOM update
   }
 
   const onClickArrayDelete = (idToDelete) => {
@@ -98,7 +98,7 @@ function App() {
     const todosKeep = todos.filter( (todo) => {
       return todo.id !== idToDelete
     } ) 
-    setTodos( todosKeep )
+    setTodos( todosKeep ) // overwrite old array and trigger DOM update
   }
 
   // JSX calculated pieces
