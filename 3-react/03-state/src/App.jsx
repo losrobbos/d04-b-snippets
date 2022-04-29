@@ -4,6 +4,8 @@ import './App.css'
 
 function App() {
 
+  // *** STATES
+
   // number
   const [count, setCount] = useState( 0 ) // set up a state and put 0 into the BOX
   
@@ -24,7 +26,8 @@ function App() {
     { id: "t2", title: "Learn some Java. Enjoy!" },
   ])
 
-  // EVENT LISTENERS 
+  // *** EVENT LISTENERS 
+
   const onClickNumber = () => {
     console.log("Update number")
     setCount( count + 1 )
@@ -39,7 +42,8 @@ function App() {
     console.log("Update user")
 
     // IMMUTABILITY pattern
-    // klappt nicht! State variables dürfen wir nicht DIREKT manipulieren
+
+    // folgender Code klappt nicht! State variables dürfen wir nicht DIREKT manipulieren
     // user.password = "1973198642zhnw7510100uixjst6565###111"
 
     setUser({
@@ -57,15 +61,31 @@ function App() {
     const idNew = Date.now().toString() // generate some unique id
     const todoNew = { id: idNew, title: "Add something to array" }
 
-    console.log( idNew )
+    console.log(idNew)
 
-    // adding a new item to array the wrong way
+    // the WRONG way: adding a new item to array
     // todos.push( todoNew ) // push does not work => we cannot alter the original!
 
     // correct way: create COPY + add new one
     const todosCopy = [...todos, todoNew] // copy OLD array items + merge with NEW item
 
-    setTodos( todosCopy )
+    setTodos(todosCopy)
+  }
+
+  const onClickArrayEdit = (idToEdit) => {
+    const titleNew = prompt("Neuer Titel pleeeze: ")
+    console.log("Edit item: ", idToEdit, "Title New: ", titleNew)
+
+    // FIND the item to update by ID
+    // Update the found OBJECT => immutable => modify a COPY
+
+    const todosUpdated = todos.map( todo => {
+      return todo.id === idToEdit ? 
+        {...todo, title: titleNew } : // item we wanna update! => create a COPY of it!! 
+        todo // all others items => simply dont touch!
+    })
+
+    setTodos( todosUpdated )
   }
 
   const onClickArrayDelete = (idToDelete) => {
@@ -81,27 +101,30 @@ function App() {
     setTodos( todosKeep )
   }
 
-  // JSX
-  //  we can just output SIMPLE datatypes between curly braces {} in JSX
+  // JSX calculated pieces
+  const jsxTodoList = todos.map((todo) => (
+    <div key={todo.id}>
+      <span>{todo.title}</span>
+      {/* use CALLBACK syntax when you want to pass PARAMETERS to function */}
+      <button onClick={() => onClickArrayEdit(todo.id)}>Edit</button>
+      <button onClick={() => onClickArrayDelete(todo.id)}>X</button>
+    </div>
+  ))
+
+  // LAYOUT
   return (
     <div className="App">
       <header className="App-header">
         <div onClick={onClickNumber}>Count: {count}</div>
         <div onClick={onClickString}>Message: {message}</div>
         <div onClick={onClickObject}>
-          {" "}
+          {/* we can just output SIMPLE datatypes between curly braces {} in JSX */}
           User: {user.username} {user.password} {user.specialization}{" "}
         </div>
         <br />
         <div>
           Todos:{" "}
-          {todos.map((todo) => (
-            <div key={todo.id}>
-              <span>{todo.title}</span>
-              {/* use CALLBACK syntax when you want to pass PARAMETERS to function */}
-              <button onClick={ () => onClickArrayDelete(todo.id) }>X</button>
-            </div>
-          ))}
+          { jsxTodoList }
           <button onClick={onClickArrayAdd}>Add</button>
         </div>
       </header>
