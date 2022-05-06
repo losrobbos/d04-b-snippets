@@ -1,6 +1,6 @@
 import './App.css'
 import { Title } from './components/styled/Title'
-import Layout from './Layout'
+import Layout from './components/styled/Layout'
 
 // Styled Components => creates components with style
 
